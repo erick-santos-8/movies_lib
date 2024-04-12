@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 import { useSearchParams } from "react-router-dom"
 import MovieCard from "../components/MovieCard"
 
-const searchUrl = import.meta.env.VITE_SEARCH
-const apiKey = import.meta.env.VITE_API_KEY
+const searchUrl = import.meta.env.VITE_SEARCH;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 import "./MoviesGrid.css";
 const Search = () => {
@@ -23,8 +23,7 @@ const Search = () => {
     const searchWithQueryURL = `${searchUrl}?${apiKey}&query=${query}`;
 
     getSearchedMovies(searchWithQueryURL);
-    console.log(searchWithQueryURL)
-  }, []);
+  }, [query]);
   
   return (
     <div className="container">
@@ -35,7 +34,7 @@ const Search = () => {
         {movies.length > 0 && movies.map((movie) => <MovieCard key={movie.id} movie={movie}/>)}
       </div>
     </div>  
-    )
+    );
 }
 
 
