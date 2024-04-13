@@ -1,0 +1,28 @@
+#footer {
+    background-color: #111;
+    height: 200px;
+    padding: 4rem;
+    display: grid;
+    justify-content: center;
+}
+
+#footer ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+#footer h2{
+    color: #f7d354;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    gap: .5rem;
+}
+
+#footer h2 span{
+    font-size: small;
+}
