@@ -1,3 +1,5 @@
+Projeto realizado com base no canal Hora de Codar
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
